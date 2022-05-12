@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cake Template">
+    <meta name="keywords" content="Cake, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nim course</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="./css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="./css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="./css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/popup.css">
+    <script defer src = "./js/loginCustom.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+     <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header__top__inner">
+                            <div class="header__logo">
+                                <a href="./index.html"><img id="lo" src="img/logo.png" alt="" style="height: 100px;"></a>
+                            </div>
+                            <div class="header__top__right">
+<a type="button" href= "./signupform/register.html" class="btn btnreg">Регистрация</a>
+<a type="button" href= "./signupform/sign.html" class="btn btnreg">Вход</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+
+							<li><a href="./index.html">Начална страница</a></li>
+							<li><a href="./shop.html">Курсове</a></li>
+							<li>
+                                <a class="popup" onmouseover="popupShow1()" onmouseout="popupHide1()">Преподаватели
+                                    <span class="popuptext" id="myPopup1">Активно само за регистирани потребители.</span>
+                                </a>
+							</li>
+							<script>
+                            // When the user hovers over div, open the popup
+                            function popupShow1() {
+                              var popup = document.getElementById("myPopup1");
+                              popup.classList.toggle("show");
+                            }
+
+                            // When the user hovers out of div, close the popup
+                            function popupHide1() {
+                              var popup = document.getElementById("myPopup1");
+                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
+                              //sleep(1000);
+                              popup.classList.toggle("show");
+                            }
+
+                            function sleep(milliseconds) {
+                             const date = Date.now();
+                            let currentDate = null;
+                             do {
+                                     currentDate = Date.now();
+                                } while (currentDate - date < milliseconds);
+                            }
+                            </script>
+                            <li>
+                                <a class="popup" onmouseover="popupShow()" onmouseout="popupHide()">Тестове
+                                    <span class="popuptext" id="myPopup">Активно само за регистирани потребители.</span>
+                                </a>
+                            </li>
+                            <script>
+                            // When the user hovers over div, open the popup
+                            function popupShow() {
+                              var popup = document.getElementById("myPopup");
+                              popup.classList.toggle("show");
+                            }
+
+                            // When the user hovers out of div, close the popup
+                            function popupHide() {
+                              var popup = document.getElementById("myPopup");
+                              //use the function to specify after how much tiime to hide the popup (in milliseconds)
+                              //sleep(1000);
+                              popup.classList.toggle("show");
+                            }
+
+                            function sleep(milliseconds) {
+                             const date = Date.now();
+                            let currentDate = null;
+                             do {
+                                     currentDate = Date.now();
+                                } while (currentDate - date < milliseconds);
+                            }
+                            </script>
+
+                            <li><a href="./contact.html">Контакти</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Begin -->
+
+    <!-- Breadcrumb End -->
+<script>
+
+        function change(buttonID) // no ';' here
+        {
+            var element = document.getElementById(buttonID);
+            var imageSrc = element.getAttribute("src");
+            if(imageSrc == "./img/heart-black.png"){
+                element.setAttribute("src", "./img/heart-red.png");
+            }
+            else{
+                element.setAttribute("src", "./img/heart-black.png");
+            }
+        }
+
+        </script>
+    <!-- Shop Details Section Begin -->
+    <section class="product-details spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product__details__img">
+                        <div class="product__details__big__img">
+                            <img class="big_img" src="img/shop/nim_course.jpg" alt="">
+                        </div>
+                        <div class="product__details__thumb">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product__details__text">
+                        <div class="product__label">Nim</div>
+						<br/>
+                        <h4 class="text">Задълбочен курс по Nim</h4>
+                        <p>Nim е статично въведен компилиран системен програмен език. Той съчетава успешни концепции от зрели езици като Python, Ada и Modula. В този курс ще се задълбочат познанията по езика, като се обърне внимание на конкретни аспекти на езика и неговите възможности.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product__details__tab">
+                <div class="col-lg-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Съдържание</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Преподавателски екип</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Отзиви</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8">
+								<br/>
+                                <ul>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                    <li>Lorem ipsum</li>
+                                </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane" id="tabs-2" role="tabpanel">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8">
+                                    <p>
+                                        <div class="gallery">
+                                            <a target="_blank" >
+                                              <img src="img/teacher1.jpeg" alt="teacher" width="600" height="400">
+                                            </a>
+                                            <div class="desc">Иван Иванов</div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ante lorem, sollicitudin non arcu posuere, rhoncus tempor risus. Vestibulum ipsum urna, viverra sit amet hendrerit a, condimentum sed felis. Mauris lacinia scelerisque congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi tempus consectetur mauris, vel bibendum enim. Cras ante felis, rutrum id mauris vel, lobortis.</p>
+                                    </p>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p>
+                                        <div class="gallery">
+                                            <a target="_blank" >
+                                              <img src="img/teacher1.jpeg" alt="teacher" width="600" height="400">
+                                            </a>
+                                            <div class="desc">Иван Иванов</div>
+                                          </div>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ante lorem, sollicitudin non arcu posuere, rhoncus tempor risus. Vestibulum ipsum urna, viverra sit amet hendrerit a, condimentum sed felis. Mauris lacinia scelerisque congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi tempus consectetur mauris, vel bibendum enim. Cras ante felis, rutrum id mauris vel, lobortis.</p>
+                                    </p>
+                                </div>
+                                <div class="col-lg-8">
+                                    <p>
+                                        <div class="gallery">
+                                            <a target="_blank" >
+                                              <img src="img/teacher1.jpeg" alt="teacher" width="600" height="400">
+                                            </a>
+                                            <div class="desc">Иван Иванов</div>
+                                          </div>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ante lorem, sollicitudin non arcu posuere, rhoncus tempor risus. Vestibulum ipsum urna, viverra sit amet hendrerit a, condimentum sed felis. Mauris lacinia scelerisque congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi tempus consectetur mauris, vel bibendum enim. Cras ante felis, rutrum id mauris vel, lobortis.</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane" id="tabs-3" role="tabpanel">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-lg-8">
+
+                                    <div class="blog__details__comment">
+                            <br/>
+							<br/>
+                            <div class="blog__details__comment__item">
+                                <div class="blog__details__comment__item__pic">
+                                    <img src="img/blog/details/comment-1.jpg" alt="">
+                                </div>
+                                <div class="blog__details__comment__item__text">
+                                    <h6>Ивана Иванова</h6>
+                                    <span>26.03.2021</span>
+                                    <p>Morbi tempus consectetur mauris?</p>
+                                    <div class="blog__details__comment__btns">
+                                        <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+							<hr/>
+							<br/>
+                            <div class="blog__details__comment__item blog__details__comment__item--reply">
+                                <div class="blog__details__comment__item__pic">
+                                    <img src="img/blog/details/comment-2.jpg" alt="">
+                                </div>
+                                <div class="blog__details__comment__item__text">
+                                    <h6>Петър Димитров</h6>
+                                    <span>29.03.2022</span>
+                                    <p>Mauris lacinia scelerisque congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi tempus consectetur mauris, vel bibendum enim. Cras ante felis, rutrum id mauris vel, lobortis.!</p>
+                                    <div class="blog__details__comment__btns">
+                                        <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+							<hr/>
+							<br/>
+                            <div class="blog__details__comment__item">
+                                <div class="blog__details__comment__item__pic">
+                                    <img src="img/blog/details/comment-3.jpg" alt="">
+                                </div>
+                                <div class="blog__details__comment__item__text">
+                                    <h6>Нина Попова</h6>
+                                    <span>30.01.2022</span>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.?</p>
+                                    <div class="blog__details__comment__btns">
+                                        <a href="#"><i class="fa fa-reply" aria-hidden="true"></i></a>
+                                        <a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Shop Details Section End -->
+
+    <!-- Related Products Section Begin -->
+    <section class="related-products spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title">
+                        <h2>Разгледайте и другите курсове</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="related__products__slider owl-carousel">
+                    <div class="col-lg-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/shop/cpp_course.jpg">
+                                <div class="product__label">
+                                    <span>C++</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+
+                                <div class="product__item__price">OOP</div>
+                                <div class="cart_add">
+                                    <a href="cpp_course.html">Виж курса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/shop/python_course.png">
+                                <div class="product__label">
+                                    <span>Python</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+
+                                <div class="product__item__price">Скриптове с Python</div>
+                                <div class="cart_add">
+                                    <a href="python_course.html">Виж курса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/shop/js_course.png">
+                                <div class="product__label">
+                                    <span>Java Script</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+
+                                <div class="product__item__price">Web програмиране - 1 част</div>
+                                <div class="cart_add">
+                                    <a href="js_course.html">Виж курса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/shop/haskell_course.png">
+                                <div class="product__label">
+                                    <span>Haskell</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+
+                                <div class="product__item__price">Функционално Програмиране</div>
+                                <div class="cart_add">
+                                    <a href="haskell_course.html">Виж курса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/shop/react_course.png">
+                                <div class="product__label">
+                                    <span>React</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+
+                                <div class="product__item__price">Първи стъпки с React</div>
+                                <div class="cart_add">
+                                    <a href="react_course.html">Виж курса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="product__item">
+                            <div class="product__item__pic set-bg" data-setbg="img/shop/docker_course.png">
+                                <div class="product__label">
+                                    <span>Docker</span>
+                                </div>
+                            </div>
+                            <div class="product__item__text">
+
+                                <div class="product__item__price">Docker</div>
+                                <div class="cart_add">
+                                    <a href="docker_course.html">Виж курса</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related Products Section End -->
+ <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img class="footer-img" src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Не се колебайте да ни изпратите съобщение. Ще Ви отговорим в рамките на 24 часа.</p>
+                        <div class="footer__social">
+                           <a href="contact.html"><i class="fa fa-facebook"></i></a>
+                            <a href="contact.html"><i class="fa fa-instagram"></i></a>
+                            <a href="contact.html"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-6">
+                    <div class="footer__newslatter">
+                        <h6>Абонамент за бюлетин</h6>
+                        <p>Бъдете в течение с дигиталните технолигии</p>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+
+                  <div class="privacy">
+                    <div class="copyright__widget">
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                            <li><a href="#">Site Map</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+			<div class="row">
+			 <div>
+                        <p class="copyright__text text-white">
+                          Собственост на Николай Стефанов, Ивайло Вътев, Даниел Стоянов, Мирослав Парапанов, Емил Иваничков
+                      </p>
+                  </div>
+			</div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.barfiller.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Cake Template">
+    <meta name="keywords" content="Cake, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LearnAndGrow</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/flaticon.css" type="text/css">
+    <link rel="stylesheet" href="css/barfiller.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script defer src = "./js/loginCustom.js"></script>
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+     <!-- Header Section Begin -->
+ <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header__top__inner">
+                            <div class="header__logo">
+                                <a href="./index_logged_in_teacher.html"><img id="lo" src="img/logo.png" alt="" style="height: 100px;"></a>
+                            </div>
+                            <div class="header__top__right">
+                                <div class="testimonial__author">
+                                    <div class="testimonial__author__pic">
+										<a href="./profile.html">
+                                        <img src="img/profile_pictures/elizabet_profile_picture.png" alt="">
+										</a>
+                                    </div>
+                                    <div class="testimonial__author__text">
+                                        <h5>Елизабет Спароу</h5>
+                                        <h6>преподавател</h6>
+										<a href="./favourites.html">
+                                            <img id="favourites" src="img/heart.png" alt="" >
+                                        </a>
+                                        <a href="./uploaded.html">
+                                            <img id="home" src="img/home.png" alt="" >
+                                        </a>
+                                        <button class="btn btnreg" onclick="logout1()">Изход</button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="canvas__open"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+							<li class="active" ><a href="./index_logged_in.html">Начална страница</a></li>
+							<li ><a href="./shop_registered.html">Курсове</a></li>
+							<li ><a href="./teachers.html">Преподаватели</a></li>
+							<li><a href="./alltests.html">Тестове</a></li>
+                            <li><a href="./contact_logged_in.html">Контакти</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <section class="hero">
+        <div class="hero__slider owl-carousel">
+            <div class="hero__item set-bg" data-setbg="img/hero/image.jpeg">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="button-background"></div>
+                        <p class="slogan">
+                            ВСИЧКИ НЕОБХОДИМИ КУРСОВЕ ЗА ИЗУЧАВАНЕ НА "СЛОЖНОТО" ПРОГРАМИРАНЕ НА ЕДНО МЯСТО
+                        </p>
+                        <button onclick="location.href = 'shop_registered.html';" class="btn btn-course" >КЪМ КУРСОВЕТЕ</button>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="hero__text">
+                                <h2>Готварството не е химия. То е изкуство. То изисква инстинкт и вкус, а не точни мерки.</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <script>
+
+        function change(buttonID) // no ';' here
+        {
+            var element = document.getElementById(buttonID);
+            var imageSrc = element.getAttribute("src");
+            if(imageSrc == "./img/heart-black.png"){
+                element.setAttribute("src", "./img/heart-red.png");
+            }
+            else{
+                element.setAttribute("src", "./img/heart-black.png");
+            }
+        }
+
+        </script>
+
+
+<!-- Categories Section Begin -->
+<br/>
+<br/>
+<div class="categories">
+    <div class="container">
+        <div class="col-lg-7 col-md-7 col-sm-7">
+            <div class="section-title">
+                <span>КАТЕГОРИИ</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="categories__slider owl-carousel">
+                <div class="categories__item">
+                    <div class="categories__item__icon ">
+                        <img class="category-img" src="Categories/java.svg" alt="">
+                        <h5>Java</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <img class="category-img" src="Categories/cpp.jpg" alt="">
+                        <h5>C++</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon ">
+                        <img class="category-img" src="Categories/python.png" alt="">
+                        <h5>Python</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <img class="category-img" src="Categories/docker.png" alt="">
+                        <h5>Docker</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon ">
+                        <img class="category-img" src="Categories/js.png" alt="">
+                        <h5>Java Script</h5>
+                    </div>
+                </div>
+                <div class="categories__item">
+                    <div class="categories__item__icon">
+                        <img class="category-img" src="Categories/haskell.png" alt="">
+                        <h5>Haskell</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Categories Section End -->
+
+
+    <!-- Product Section Begin -->
+    <section class="product spad">
+        <div class="container">
+		<div class="col-lg-7 col-md-7 col-sm-7">
+                    <div class="section-title">
+                        <span>Популярни курсове</span>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/java_course.jpg">
+                            <div class="product__label">
+                                <span class="course-kind">Java</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Алгоритми - първа част</a></h6></div>
+                            <div class="cart_add">
+                                <a href="java_course_registered.html">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/cpp_course.jpg">
+                            <div class="product__label">
+                                <span class="course-kind">C++</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Обектно Ориентирано Програмиране</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/python_course.png">
+                            <div class="product__label">
+                                <span class="course-kind">Python</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Скриптове с Python</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/nim_course.jpg">
+                            <div class="product__label">
+                                <span class="course-kind">Nim</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Задълбочен курс по Nim</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/js_course.png">
+                            <div class="product__label">
+                                <span class="course-kind">Java Script</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Web приложения - 1 Част</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/haskell_course.png">
+                            <div class="product__label">
+                                <span class="course-kind">Haskell</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Функционално програмиране с Haskell</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/react_course.png">
+                            <div class="product__label">
+                                <span class="course-kind">React</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Първи стъпки с React</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="product__item">
+                        <div class="product__item__pic set-bg" data-setbg="img/shop/docker_course.png">
+                            <div class="product__label">
+                                <span class="course-kind">Docker</span>
+                            </div>
+                        </div>
+                        <div class="product__item__text">
+						<div class="product__item__price"><h6><a>Контейнеризиране на приложения</a></h6></div>
+                            <div class="cart_add">
+                                <a href="#">Към курса</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product Section End -->
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg="img/footer-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img class="footer-img" src="img/logo.png" alt=""></a>
+                        </div>
+                        <p>Не се колебайте да ни изпратите съобщение. Ще Ви отговорим в рамките на 24 часа.</p>
+                        <div class="footer__social">
+                            <a href="contact_logged_in.html"><i class="fa fa-facebook"></i></a>
+                            <a href="contact_logged_in.html"><i class="fa fa-instagram"></i></a>
+                            <a href="contact_logged_in.html"><i class="fa fa-youtube-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-5 col-sm-6">
+                    <div class="footer__newslatter">
+                        <h6>Абонамент за бюлетин</h6>
+                        <p>Бъдете в течение с дигиталните технолигии</p>
+                        <form action="#">
+                            <input type="text" placeholder="Email">
+                            <button type="submit"><i class="fa fa-send-o"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+			<div class="row">
+			 <div>
+                        <p class="copyright__text text-white">
+                          Собственост на Николай Стефанов, Ивайло Вътев, Даниел Стоянов, Мирослав Парапанов, Емил Иваничков
+                      </p>
+                  </div>
+			</div>
+        </div>
+    </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Search Begin -->
+<div class="search-model">
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch">+</div>
+        <form class="search-model-form">
+            <input type="text" id="search-input" placeholder="Search here.....">
+        </form>
+    </div>
+</div>
+<!-- Search End -->
+
+<!-- Js Plugins -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="js/jquery.barfiller.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+
+
+</html>
